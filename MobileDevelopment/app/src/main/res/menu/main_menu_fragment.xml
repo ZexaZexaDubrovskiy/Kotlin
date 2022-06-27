@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/searchAction"
+        android:title="Быстрый поиск"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+
+
+
+
+    <!--
+    <item android:id="@+id/addAction"
+        android:title="Добавить покупку"
+        app:showAsAction="withText" />
+    <item android:id="@+id/clearAction"
+        android:title="Очистить список покупок"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="withText" />
+    <item android:id="@+id/infoAction"
+        android:title="О приложении"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="withText" />
+        -->
+</menu>

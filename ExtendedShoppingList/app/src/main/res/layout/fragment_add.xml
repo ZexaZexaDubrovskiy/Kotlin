@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_double_spanish_white_25"
+    android:padding="8dp"
+    tools:context=".AddFragment">
+
+    <EditText
+        android:id="@+id/shoppingNameEditText"
+        style="@style/StyleForEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_type_shopping_name_text"
+        app:layout_constraintTop_toBottomOf="@id/shoppingNameTextView" />
+
+    <EditText
+        android:id="@+id/shoppingQuantityEditText"
+        style="@style/StyleForEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_type_shopping_quantity_text"
+        app:layout_constraintTop_toBottomOf="@id/shoppingQuantityTextView" />
+
+    <TextView
+        android:id="@+id/addFragmentCaption"
+        style="@style/StyleForCaptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_new_shopping_caption"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shoppingQuantityTextView"
+        style="@style/StyleForTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_shopping_quantity_text"
+        app:layout_constraintTop_toBottomOf="@id/shoppingNameEditText" />
+
+    <TextView
+        android:id="@+id/shoppingNameTextView"
+        style="@style/StyleForTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_shopping_name_text"
+
+        app:layout_constraintTop_toBottomOf="@id/addFragmentCaption" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/okButton"
+        style="@style/StyleForMaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/str_ok_text"
+        app:icon="@drawable/ic_ok"
+        app:layout_constraintTop_toBottomOf="@id/shoppingQuantityEditText"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelButton"
+        style="@style/StyleForMaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cl_double_spanish_white"
+        android:text="@string/str_cancel_text"
+        app:icon="@drawable/ic_cancel"
+        app:layout_constraintTop_toBottomOf="@id/okButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

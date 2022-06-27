@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RpCollegeMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="StyleForToolbar">
+        <!-- Цвет фона тулбара. -->
+        <item name="android:background">@color/KhakiWeb</item>
+        <item name="android:elevation">8dp</item>
+        <item name="theme">@style/ThemeForToobar</item>
+    </style>
+
+    <style name="ThemeForToobar" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <!-- Цвет фона меню тулбара. -->
+        <item name="popupMenuBackground">@color/KhakiWeb</item>
+        <!-- Цвет текста в меню тулбара. -->
+        <item name="android:textColor">@color/white</item>
+        <!-- Цвет надписи на тулбаре и иконок в меню. -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+</resources>

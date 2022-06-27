@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ExtendedShoppingList</string>
+    <string name="str_confirmation_caption">Подтверждение</string>
+    <string name="str_confirmation_remove_shopping">Вы уверены, что хотите удалить покупку \"%1$s (%2$s)\"</string>
+    <string name="str_yes_text">Да</string>
+    <string name="str_no_text">Нет</string>
+    <string name="str_confirmation_clear_shoppings">Вы уверены, что хотите очистить список покупок?</string>
+    <string name="str_information_caption">Информация</string>
+    <string name="str_about_program_info">Программа\nExtended Shoppings List ver 1.0.</string>
+    <string name="str_ok_text">Ок</string>
+    <string name="str_new_shopping_caption">Новая покупка</string>
+    <string name="str_edit_shopping_caption">Изменение данных о покупке</string>
+    <string name="str_shopping_name_text">Наименование</string>
+    <string name="str_shopping_quantity_text">Количество</string>
+    <string name="str_type_shopping_name_text">Впишите наименование покупки</string>
+    <string name="str_type_shopping_quantity_text">Впишите количество</string>
+    <string name="str_cancel_text">Отмена</string>
+    <string name="str_shoppings_list_caption">Список покупок</string>
+    <string name="str_search_action_text">Быстрый поиск по списку</string>
+    <string name="str_add_action_text">Новая покупка</string>
+    <string name="str_clear_action_text">Очистить список покупок</string>
+    <string name="str_about_action_text">Информация о приложении</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+
+    android:background="@drawable/recycler_view_item_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/recyclerViewArticleTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/bone"
+        android:textStyle="bold"
+        android:text="asdasdsaddf"
+        android:layout_marginStart="10dp"
+        android:maxLines="2"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/recyclerViewArticlePhotoImageView"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewArticleTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars"
+        app:riv_corner_radius="30dip"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/recyclerViewArticleAnnotationTextView"
+        android:layout_width="0dp"
+        android:textColor="@color/bone"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/recyclerViewArticlePhotoImageView"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewArticleTitleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="probny text"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:maxLines="4"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

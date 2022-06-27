@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/Almond"
+    tools:context=".AddEventFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMainEvent"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@color/KhakiWeb"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonMenuMainEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintBottom_toBottomOf="@id/toolbarMainEvent"
+            app:layout_constraintStart_toStartOf="@id/toolbarMainEvent"
+            app:layout_constraintTop_toTopOf="@id/toolbarMainEvent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/addTitle"
+            android:textColor="@color/Charcoal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@id/toolbarMainEvent"
+            app:layout_constraintEnd_toEndOf="@id/toolbarMainEvent"
+            app:layout_constraintStart_toStartOf="@id/toolbarMainEvent"
+            app:layout_constraintTop_toTopOf="@id/toolbarMainEvent" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/editTextTypeEventAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/typeTitle"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarMainEvent" />
+
+    <EditText
+        android:id="@+id/editTextSubdivisionAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextTypeEventAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTypeEventAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTypeEventAddEvent"
+
+        android:text="@string/subdivision"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextLocationAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextSubdivisionAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubdivisionAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSubdivisionAddEvent"
+
+        android:text="@string/location"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextControlAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextLocationAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocationAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLocationAddEvent"
+
+        android:text="@string/Control"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextDenominationAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextControlAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextControlAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextControlAddEvent"
+
+        android:text="@string/denomination"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextDataStartAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextDenominationAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDenominationAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDenominationAddEvent"
+
+        android:text="@string/dataStart"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextTimeStartAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextDataStartAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDataStartAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDataStartAddEvent"
+
+        android:text="@string/timeStart"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <EditText
+        android:id="@+id/editTextTimeEndAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextTimeStartAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeStartAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTimeStartAddEvent"
+
+        android:text="@string/timeEnd"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <Button
+        android:id="@+id/buttonLocalEventAddEvent"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTimeEndAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeEndAddEvent"
+
+        android:layout_margin="10dp"
+        android:foreground="@color/KhakiWeb"
+        />
+
+    <TextView
+        android:id="@+id/editTextLocalEventAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toEndOf="@+id/buttonLocalEventAddEvent"
+        app:layout_constraintTop_toTopOf="@+id/buttonLocalEventAddEvent"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLocalEventAddEvent"
+
+        android:text="@string/timeEnd"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTStatusEventAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextTimeEndAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocalEventAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTimeEndAddEvent"
+
+        android:text="@string/statusEvent"
+        android:textStyle="bold"
+        android:textColor="@color/FrenchBistre"
+
+        android:background="@drawable/item_add_event"
+        android:backgroundTint="@color/KhakiWeb"
+        android:padding="10dp"
+        app:backgroundTint="@color/KhakiWeb" />
+
+    <TextView
+        android:id="@+id/editTextPeopleAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:layout_constraintStart_toStartOf="@+id/editTextTStatusEventAddEvent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTStatusEventAddEvent"
+
+        android:text="@string/people"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAddAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeopleAddEvent"
+        app:layout_constraintStart_toStartOf="@+id/editTextPeopleAddEvent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPeopleAddEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

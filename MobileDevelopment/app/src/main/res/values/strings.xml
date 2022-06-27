@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RpCollegeMobile</string>
+
+    <string name="addTitle">Добавить</string>
+    <string name="event">Мероприятия</string>
+    <string name="typeTitle">Тип мероприятия</string>
+    <string name="subdivision">Подразделение</string>
+    <string name="location">Место проведения</string>
+    <string name="Control">Контроль</string>
+    <string name="denomination">Наименование</string>
+    <string name="dataStart">Дата проведения</string>
+    <string name="timeStart">Время проведения начало</string>
+    <string name="timeEnd">Время проведения окончание</string>
+    <string name="localEvent">Локальное мероприятие</string>
+    <string name="statusEvent">Статус мероприятия в плане</string>
+    <string name="participants">Участники:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="people">Участники:</string>
+
+    <string name="str_fragment">text</string>
+</resources>

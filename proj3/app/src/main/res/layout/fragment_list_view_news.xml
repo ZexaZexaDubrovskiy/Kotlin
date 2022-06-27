@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ListViewNews">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/listViewNewsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/bone"
+            android:background="@color/silver_pink"
+            android:elevation="8dp"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:menu="@menu/page_viewer_news_menu"
+            app:title="@string/str_list_view_news_title"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listViewNewsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_silver"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:nestedScrollingEnabled="true"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="4dp"
+        android:paddingBottom="95dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

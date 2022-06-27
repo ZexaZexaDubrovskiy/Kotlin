@@ -1,0 +1,26 @@
+//пример запроса к fdb через php
+$sql = "select * from acv_rep_01('". $dataStart . "', '" . $dataEnd . "', null, null, 1, 1)";
+//или
+$sql = "select NAME from nameTable";
+//Выборка данных в переменную RESULT
+$result = $dbh->query($sql); 
+
+//Выходные парам.
+ACV_ID (INTEGER) - ?
+ATP_ID (INTEGER) - ?
+ACTIVITY_TYPE (VARCHAR) - тип мероприятия
+NAME (VARCHAR) - наименование
+SBD_ID (INTEGER) - ?
+SUBDIVISION (VARCHAR) - подразделение
+LOCAL (SMALLINT) - локальное мероприятие(true/false)
+CONT_WOR_ID (INTEGER) - id работника
+CONT_WOR_NAME (VARCHAR) - имя работника
+PLAN_DATE (DATE) - дата начала мероприятия
+PLAN_START_TIME (VARCHAR) - время начала мероприятия
+PLAN_END_TIME (VARCHAR) - время конца мероприятия
+PLAN_DATE_TIME_STR (VARCHAR) - статус мероприятия в плане
+PLACE (VARCHAR) - место(кабинет) мероприятия
+EXEC_DATE (DATE) - отметка об исполнении
+RESPONSIBLE_WORKERS (VARCHAR) - ответственные работники
+SIGNED (SMALLINT) - ?
+CANCELED (SMALLINT) - завершено?

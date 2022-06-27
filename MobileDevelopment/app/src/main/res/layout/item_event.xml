@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:elevation="20dp"
+    android:translationZ="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutItemEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/KhakiWeb"
+        style="@style/Animation.Design.BottomSheetDialog"
+        >
+
+        <TextView
+            android:id="@+id/TextViewActivityTypeEventItemEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+
+            tools:text="Крупные толстые зеленые огурцы с колючими пупырышками"/>
+
+        <TextView
+            android:id="@+id/TextViewNameEventItemEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/TextViewActivityTypeEventItemEvent"
+            app:layout_constraintStart_toStartOf="@id/TextViewActivityTypeEventItemEvent"
+            app:layout_constraintEnd_toEndOf="@id/TextViewActivityTypeEventItemEvent"
+            android:layout_margin="10dp"
+
+            android:textSize="12sp"
+            android:maxLines="5"
+
+
+
+            tools:text="Нужно будет обсудить очень важные темы в кабинете №28. При себе иметь ноги и руки!!! Так же тут будет куча всего интересного Нужно будет обсудить очень ..."
+            />
+
+        <TextView
+            android:id="@+id/TextViewDataStartItemEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/TextViewNameEventItemEvent"
+            app:layout_constraintStart_toStartOf="@id/TextViewNameEventItemEvent"
+            app:layout_constraintEnd_toEndOf="@id/TextViewNameEventItemEvent"
+            android:layout_margin="10dp"
+
+            android:textSize="12sp"
+            android:maxLines="5"
+
+
+
+            tools:text="10.10.1223"
+            android:paddingBottom="10dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

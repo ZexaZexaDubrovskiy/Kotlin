@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Almond"
+    tools:context=".MainEventFragment">
+
+    <!--
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMainEvent"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@color/KhakiWeb"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/imageButtonMenuMainEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/ic_menu"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/toolbarMainEvent"
+        app:layout_constraintStart_toStartOf="@id/toolbarMainEvent"
+        app:layout_constraintTop_toTopOf="@id/toolbarMainEvent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/event"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/toolbarMainEvent"
+        app:layout_constraintEnd_toEndOf="@id/toolbarMainEvent"
+        app:layout_constraintStart_toStartOf="@id/toolbarMainEvent"
+        app:layout_constraintTop_toTopOf="@id/toolbarMainEvent" />
+    </androidx.appcompat.widget.Toolbar>
+    -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarMainEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainFragmentToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:menu="@menu/main_menu_fragment"
+            style="@style/StyleForToolbar"
+            app:title="@string/str_fragment" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMainEvent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMainEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

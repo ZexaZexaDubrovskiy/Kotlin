@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_silver"
+    tools:context=".ViewPagerNewsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/viewPagerNewsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/page_viewer_news_menu"
+        app:title="@string/str_view_pager_news_title"
+        app:titleTextColor="@color/bone"
+        android:background="@color/silver_pink"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/viewPagerNewsTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/pale_silver"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerNewsToolbar"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/toolbar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerNewsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/pale_silver"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/viewPagerNewsDotsIndicator"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerNewsTabLayout" />
+
+
+    <ProgressBar
+        android:id="@+id/viewPagerNewsProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/viewPagerNewsDotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:dotsColor="@color/copper_rose"
+        app:dotsCornerRadius="4dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsStrokeColor="@color/dark_buzantium"
+        app:dotsStrokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

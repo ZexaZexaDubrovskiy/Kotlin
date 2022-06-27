@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:background="@color/cl_double_spanish_white_25">
+
+    <ListView
+        android:id="@+id/shoppingsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingHorizontal="4dp"
+        android:paddingBottom="85dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:divider="@null"
+        android:dividerHeight="4dp"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainFragmentAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainFragmentToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:menu="@menu/menu_main_fragment"
+            style="@style/StyleForToolbar"
+            app:title="@string/str_shoppings_list_caption" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ВНИМАНИЕ!!! Для установки цветов фона и окантовки используются свойства backgroundTint
+         из разных пространств имен - android и app. -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        android:layout_gravity="end|bottom"
+        app:maxImageSize="32dp"
+        app:borderWidth="2dp"
+        android:backgroundTint="@color/cl_tussock"
+        app:backgroundTint="@color/cl_spice" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
